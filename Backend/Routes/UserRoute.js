@@ -78,28 +78,12 @@ userRouter.post("/login", async (req, res) => {
 });
 
 
-const tokenBlacklist = new Set(); 
-
 userRouter.post("/logout", (req, res) => {
-    const token = req.headers.authorization?.split(" ")[1]; 
-    
-    if (!token) {
-        return res.status(400).json({ message: "No token provided" });
-    }
-
-    tokenBlacklist.add(token);
     return res.status(200).json({ message: "Logged out successfully" });
 });
 
-const checkTokenBlacklist = (req, res, next) => {
-    const token = req.headers.authorization?.split(" ")[1];
-    if (token && tokenBlacklist.has(token)) {
-        return res.status(401).json({ message: "Token is invalid. Please log in again." });
-    }
-    next();
-};
 
-userRouter.use(checkTokenBlacklist);
+
 
 
 module.exports = { userRouter }
