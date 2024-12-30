@@ -1,0 +1,32 @@
+
+.MuiTable-root {
+  margin: auto;
+  width: 100%;
+}
+
+.MuiTableRow-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiTableCell-root {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+}
+
+.MuiTableHead-root {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+  .MuiTable-root {
+    width: 90%;
+  }
+
+  .MuiTableCell-root {
+    font-size: 14px;
+  }
+}
