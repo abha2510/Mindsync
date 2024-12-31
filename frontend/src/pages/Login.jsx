@@ -89,7 +89,6 @@ function Login() {
         </Alert>
       </Snackbar>
 
-      {/* Modal for non-admin users */}
       <Dialog open={openModal} onClose={handleCancel}>
         <DialogTitle>Login Successful</DialogTitle>
         <DialogContent>
