@@ -8,7 +8,7 @@ const { adminRouter } = require('./Routes/AdminRoute');
 const app = express();
 app.use(express.json());
 const corsOptions = {
-    origin: ['http://localhost:3000','https://mindsync-qef2.onrender.com','*'],
+    origin: ['http://localhost:3000','*'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     allowedHeaders: 'Content-Type, Authorization, X-Requested-With'
