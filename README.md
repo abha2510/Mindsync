@@ -31,7 +31,7 @@ User Management:
 ### Frontend
 * React.js
 * React Router for navigation
-* Context API for state management
+* Redux for state management
 * CSS Framework: Material-UI for styling
 ### Backend
 * Node.js with Express.js
