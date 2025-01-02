@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://mindsync-qef2.onrender.com',
+    baseURL: 'https://mindsync-bt2a.onrender.com',
     headers: { 'Content-Type': 'application/json' },
 });
 
